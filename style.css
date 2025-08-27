@@ -1,0 +1,163 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  background: #eef6ff;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-card h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-card .highlight {
+  color: #0077cc;
+}
+
+.hero-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+.section-head h2 {
+  margin: 2rem 0 1rem;
+  text-align: center;
+  color: #0077cc;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #0077cc;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #005999;
+}
+
+.btn-ghost {
+  border: 2px solid #0077cc;
+  color: #0077cc;
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  background: #0077cc;
+  color: white;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+/* Back to top button */
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50%;
+  padding: 0.7rem 1rem;
+}
