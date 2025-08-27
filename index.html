@@ -3,76 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">⌫</button>
+      <button onclick="appendValue('/')">÷</button>
+      <button onclick="appendValue('*')">×</button>
 
-  <!-- Header / Navbar -->
-  <header>
-    <div class="logo">MyBrand</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('-')">−</button>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Welcome to My Landing Page</h1>
-      <p>Create a clean and modern web presence with HTML & CSS</p>
-      <a href="#services" class="btn">Get Started</a>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('+')">+</button>
+
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button rowspan="2" class="equal" onclick="calculate()">=</button>
+
+      <button class="zero" onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
     </div>
-
-    <!-- 📸 Large Image Below Button -->
-    <div class="hero-image">
-      <img src="hero-sample.jpg" alt="Landing Page Showcase">
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the core technologies of web development. HTML provides the structure of a webpage by defining elements such as headings, paragraphs, images, and links, while CSS enhances the appearance by controlling colors, fonts, layouts, and overall design. Together, they work hand in hand to create websites that are both functional and visually appealing. HTML builds the foundation, and CSS adds style, making the user experience attractive, responsive, and engaging.
-    </p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <div class="box">
-        <h3>Web Design</h3>
-        <p>Creative, modern, and responsive web design services.HTML provides the basic structure of a webpage by defining content such as text, images, and links. CSS enhances this structure by adding style, including colors, fonts, layouts, and responsiveness, making the site visually attractive. Web Design brings these technologies together with creativity and user experience principles to build websites that are not only functional but also engaging and easy to navigate. Together, HTML builds the content, CSS styles it, and Web Design ensures the final product is appealing, user-friendly, and effective.</p>
-      </div>
-      <div class="box">
-        <h3>Development</h3>
-        <p>Clean coding with HTML, CSS, and JavaScript.Development are the pillars of building modern websites. HTML creates the structure and content of a webpage, CSS adds styling and layout to make it visually appealing, and Web Design combines creativity with usability to ensure a great user experience. Development takes this a step further by adding functionality through coding, making websites interactive, dynamic, and capable of handling complex tasks. Together, these elements form the complete process of creating professional, responsive, and user-friendly websites that meet both design and performance needs.</p>
-      </div>
-      <div class="box">
-        <h3>SEO</h3>
-        <p>Boost your online presence with optimized websites.SEO (Search Engine Optimization) are the essential components of creating a modern website. HTML provides the structure and content, CSS enhances it with styling and layout, and Web Design focuses on creativity and user experience to make sites attractive and easy to use. Development adds interactivity and functionality, turning static pages into dynamic and powerful applications. SEO ensures that websites are optimized for search engines, improving visibility, ranking, and reach so that more users can discover them. Together, these elements build professional, user-friendly, and successful websites that combine design, functionality, and discoverability.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: sidhraf831@email.com</p>
-    <p>Phone: +91 7019644678</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MyBrand | All Rights Reserved</p>
-  </footer>
-
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
