@@ -1,152 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sidhra Fathima — Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Nav -->
+
+  <!-- Header / Navbar -->
   <header>
-    <div class="container nav">
-      <a href="#home" class="brand" aria-label="Go to Home">
-        <span class="logo">SF</span>
-        <span>My Portfolio</span>
-      </a>
-      <nav aria-label="Primary">
-        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
-        <ul id="nav-list">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="logo">MyBrand</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero / Home -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-card">
-        <span class="chip">Available for internships</span>
-        <h1>Hi, I'm <span class="highlight">SIDHRA FATHIMA</span><br/>Engineering Student</h1>
-        <p class="lead">I craft clean, responsive websites with HTML, CSS, Java, and C++. Passionate about data analytics and building impactful projects.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">See Projects</a>
-          <a class="btn btn-ghost" href="#contact">Contact Me</a>
-        </div>
+    <div class="hero-text">
+      <h1>Welcome to My Landing Page</h1>
+      <p>Create a clean and modern web presence with HTML & CSS</p>
+      <a href="#services" class="btn">Get Started</a>
+    </div>
+
+    <!-- 📸 Large Image Below Button -->
+    <div class="hero-image">
+      <img src="hero-sample.jpg" alt="Landing Page Showcase">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the core technologies of web development. HTML provides the structure of a webpage by defining elements such as headings, paragraphs, images, and links, while CSS enhances the appearance by controlling colors, fonts, layouts, and overall design. Together, they work hand in hand to create websites that are both functional and visually appealing. HTML builds the foundation, and CSS adds style, making the user experience attractive, responsive, and engaging.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <div class="box">
+        <h3>Web Design</h3>
+        <p>Creative, modern, and responsive web design services.HTML provides the basic structure of a webpage by defining content such as text, images, and links. CSS enhances this structure by adding style, including colors, fonts, layouts, and responsiveness, making the site visually attractive. Web Design brings these technologies together with creativity and user experience principles to build websites that are not only functional but also engaging and easy to navigate. Together, HTML builds the content, CSS styles it, and Web Design ensures the final product is appealing, user-friendly, and effective.</p>
       </div>
-      <!-- Profile Picture -->
-      <div class="hero-image">
-        <img src="sidhra img.png" alt="Sidhra Fathima">
+      <div class="box">
+        <h3>Development</h3>
+        <p>Clean coding with HTML, CSS, and JavaScript.Development are the pillars of building modern websites. HTML creates the structure and content of a webpage, CSS adds styling and layout to make it visually appealing, and Web Design combines creativity with usability to ensure a great user experience. Development takes this a step further by adding functionality through coding, making websites interactive, dynamic, and capable of handling complex tasks. Together, these elements form the complete process of creating professional, responsive, and user-friendly websites that meet both design and performance needs.</p>
+      </div>
+      <div class="box">
+        <h3>SEO</h3>
+        <p>Boost your online presence with optimized websites.SEO (Search Engine Optimization) are the essential components of creating a modern website. HTML provides the structure and content, CSS enhances it with styling and layout, and Web Design focuses on creativity and user experience to make sites attractive and easy to use. Development adds interactivity and functionality, turning static pages into dynamic and powerful applications. SEO ensures that websites are optimized for search engines, improving visibility, ranking, and reach so that more users can discover them. Together, these elements build professional, user-friendly, and successful websites that combine design, functionality, and discoverability.</p>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="section-head">
-        <h2>About Me</h2>
-      </div>
-      <div class="card pad about-card">
-        <div class="about-text">
-          <h3>Sidhra Fathima</h3>
-          <p>
-            I am a dedicated engineering student with a strong foundation in <b>Java, C++, and data analytics</b>.  
-            My expertise includes effective data manipulation and statistical analysis.  
-            I have developed projects related to <b>online food ordering</b> and <b>airline reservations</b>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-head">
-        <h2>Skills</h2>
-      </div>
-      <div class="grid skills-grid">
-        <div class="skill"><strong>Programming Languages:</strong> Java, C++, HTML, SQL</div>
-        <div class="skill"><strong>Soft Skills:</strong> Time Management, Effective Communication, Critical Thinking</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-head">
-        <h2>Projects</h2>
-      </div>
-      <div class="grid projects">
-        <article class="card pad project">
-          <div class="meta"><strong>Online Food Ordering System</strong> <span class="chip">11/2024 - 12/2024</span></div>
-          <p>
-            Developed a robust online food ordering system using React for frontend, Node.js for backend, and PostgreSQL for database management.  
-            Integrated secure payment system with Stripe and implemented real-time order tracking with WebSocket.
-          </p>
-        </article>
-        <article class="card pad project">
-          <div class="meta"><strong>Airline Reservation Management System</strong> <span class="chip">03/2024 - 05/2024</span></div>
-          <p>
-            Developed an Airline Reservation Management System using SQL for backend and PHP for frontend.  
-            Facilitated easy customer data management through a Database Management System.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume">
-    <div class="container">
-      <div class="section-head">
-        <h2>Resume</h2>
-      </div>
-      <div class="card pad resume-card">
-        <p>You can view or download my resume below:</p>
-        <p>
-          <a href="resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
-        </p>
-        <p>
-          <a href="resume.pdf" download class="btn btn-ghost">Download Resume</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Contact</h2>
-      </div>
-      <div class="card pad">
-        <p><strong>Name:</strong> Sidhra Fathima</p>
-        <p><strong>Email:</strong> <a href="mailto:sidhraf831@gmail.com">sidhraf831@gmail.com</a></p>
-        <p><strong>Mobile:</strong> 7019644678</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sidhra-fathima-563a6330a" target="_blank">linkedin.com/in/sidhra-fathima-563a6330a</a></p>
-      </div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: sidhraf831@email.com</p>
+    <p>Phone: +91 7019644678</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container foot">
-      <span>© <span id="year"></span> Sidhra Fathima</span>
-      <a href="#home" class="chip">Back to top ↑</a>
-    </div>
+    <p>&copy; 2025 MyBrand | All Rights Reserved</p>
   </footer>
 
-  <button id="toTop" class="btn btn-ghost" aria-label="Back to top">↑</button>
-
-  <script src="script.js"></script>
 </body>
 </html>
